@@ -1,0 +1,22 @@
+server:
+  port: 8083
+
+logging:
+  level:
+    root: debug
+
+spring:
+  application:
+    name: gmall-manage-service
+  datasource:
+    url: jdbc:mysql://999.999.999.999:3306/gmall?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: root
+    password: 123456
+dubbo:
+  application:
+    name: gmall-manage-service
+  protocol:
+    name: dubbo
+    port: 20882
+  registry:
+    address:  zookeeper://127.0.0.1:2181

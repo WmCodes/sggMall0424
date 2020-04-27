@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+
+spring:
+  thymeleaf:
+    cache: false
+    mode: LBGACYHTML5
+  application:
+    name: gmall-order-web
+
+dubbo:
+  application:
+    name: gmall-order-web
+  protocol:
+    name: dubbo
+    port: 20881
+  registry:
+    address:  zookeeper://127.0.0.1:2181
+  consumer:
+    check: false
+    timeout: 10000

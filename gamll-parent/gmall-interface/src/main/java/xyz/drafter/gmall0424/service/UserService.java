@@ -1,5 +1,6 @@
 package xyz.drafter.gmall0424.service;
 
+import xyz.drafter.gmall0424.bean.UserAddress;
 import xyz.drafter.gmall0424.bean.UserInfo;
 
 import java.util.List;
@@ -12,4 +13,6 @@ import java.util.List;
 public interface UserService {
 
     List<UserInfo> findAll();
+
+    List<UserAddress> getUserAddressList(String userId);
 }

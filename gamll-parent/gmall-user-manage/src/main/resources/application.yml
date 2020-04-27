@@ -2,9 +2,18 @@ spring:
   application:
     name: gmall-user-manage
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/gmall?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    url: jdbc:mysql://555.555.555.555:3306/gmall?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
     username: root
     password: 123456
+dubbo:
+  application:
+    name: gmall-user-manage
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address:  zookeeper://127.0.0.1:2181
+
 
 server:
   port: 8080
